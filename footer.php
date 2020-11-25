@@ -2,22 +2,23 @@
             <div class="container">
                 <div>
                     <div>
-                        <span>Generalveien 9 , 1767 Halden</span>
-                        <span>Tel: (+47) 452 93 408</span>
                         <span>Daglig leder: Monia Berger</span>
+                        <span>Tel: (+47) 452 93 408</span>
                         <span>E-post: veslefrikkteaterskole@gmail.com</span>
+                        <span>Generalveien 9, 1767 Halden</span>
                         <span>&copy; <?php echo date('Y'); ?> Veslefrikk Teaterverksted.</span>
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Sitemap</a></li>
                             <li><a href="#">Påmeldingsskjema</a></li>
                             <li><a href="#">Vil du jobbe hos oss?</a></li>
+                            <li><a href="#">Medlemsorganisasjon</a></li>
+                            <li><a href="#">Støttespillere</a></li>
+                            <li><a href="#">Sitemap</a></li>
                         </ul>
                     </div>
                     <div>
-                        <span>Sosialle Medier</span>
+                        <span>Sosiale Medier</span>
                             <a href="https://www.facebook.com/veslefrikkteaterverksted" target="_blank">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
                             </a>

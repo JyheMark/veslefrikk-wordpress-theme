@@ -23,13 +23,13 @@ nav{
     }
 
     .menu{   
-        width: 430px;
         padding: 5px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         .menu-item{
+            padding: 0 10px;
             display: inline-block;
             text-align: center;
 
@@ -38,17 +38,19 @@ nav{
                 color: $colorSecondary;
                 font-size: 20px;
                 border-bottom: 1px solid transparent;
-                transition: border-bottom 300ms;
+                transition: all 300ms;
 
                 &:hover{
-                    border-bottom: 1px solid $colorSecondary;
+                    border-bottom: 1px solid $colorPrimary;
+                    color: $colorPrimary;
                 }
             }
         }
 
         .current-menu-item{
             a{
-                border-bottom: 1px solid $colorSecondary;
+                border-bottom: 1px solid $colorPrimary;
+                color: $colorPrimary;
             }
         }
     }
