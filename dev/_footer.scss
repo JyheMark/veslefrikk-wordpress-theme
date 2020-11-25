@@ -1,0 +1,41 @@
+footer{
+    background-color: $colorBackground;
+    color: $colorSecondary;
+
+    .container{
+        >div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            ul{
+                list-style-type: none;
+                
+                a{
+                    color: $colorSecondary;
+                }
+            }
+
+            div{
+                span{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                svg{
+                    width: 35px;
+                    color: $colorSecondary;
+                    transition: color 300ms;
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    
+        span, li{
+            display: block;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.page-home{
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+
+        img {
+            width: calc(50% - 20px);
+        }
+    
+        .content{
+            width: calc(50% - 20px);
+            padding: 10px;
+        
+            p{
+                margin-bottom: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 970px){
+            flex-direction: column;
+            width: auto;
+            margin: 0 auto;
+            padding: 0;
+
+            img, .content{
+                width: 100%;
+                font-size: 20px;
+            }
+
+            img{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

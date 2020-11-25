@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import './_colours.scss';
 @import './navbar.scss';
 @import './_header.scss';
+@import './pages.scss';
+@import './footer.scss';
 
 *{
     box-sizing: border-box;
@@ -23,16 +25,16 @@ section, header, footer{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     width: 100%;
     padding: 20px 50px;
     margin: 0 auto;
-}
 
-.content{
-    max-width: 400px;
-
-    p{
-        margin-bottom: 15px;
+    @media only screen and (max-width: 970px){
+        padding: 20px 0;
     }
 }

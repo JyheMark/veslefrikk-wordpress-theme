@@ -1,15 +1,17 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo('charset'); ?>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Veslefrikk <?php wp_title(); ?></title>
         <?php wp_head(); ?>
     </head>
     <body onload="onLoad()">
         <nav class="nav-container" id="nav-container">
             <a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php echo get_template_directory_uri().'/images/logo.png' ?>"/></a>
-            <?php 
-                wp_nav_menu();
-            ?>
+            <div>
+                <a href="tel:+4745293408">(+47) 452 93 408</a>
+                <?php wp_nav_menu(); ?>
+            </div>
         </nav>
         <header>
             <div class="hero-image" style="background-image: url(<?php echo get_field('hero_image')?get_field('hero_image'):wp_get_attachment_image_url(47, 'full'); ?>)"></div>

@@ -9,18 +9,13 @@ header{
     .page-title-container{
         display: block;
         margin: 0 auto;
-        color: #1E1E1E;
+        color: $colorBackground;
+        text-align: center;
     
         h1{
             font-size: 50px;
             font-weight: normal;
             margin-bottom: 10px;
-        }
-    
-        >div{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
         }
     }
 }
