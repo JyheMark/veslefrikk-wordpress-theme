@@ -7,63 +7,72 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-.header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 520px;
-}
-.header nav {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  background-color: #1E1E1E;
   color: #d4d4d4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 40px;
+  transition: padding 300ms;
 }
-.header nav .menu {
+nav .menu {
   padding: 5px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.header nav .menu .menu-item {
+nav .menu .menu-item {
   display: inline-block;
   width: 110px;
   text-align: center;
+  line-height: 50px;
 }
-.header nav .menu .menu-item a {
+nav .menu .menu-item a {
   border-bottom: 1px solid transparent;
   transition: border-bottom 300ms;
 }
-.header nav .menu .menu-item a:hover {
+nav .menu .menu-item a:hover {
   border-bottom: 1px solid #d4d4d4;
 }
-.header nav .menu .current-menu-item a {
+nav .menu .current-menu-item a {
   border-bottom: 1px solid #d4d4d4;
 }
-.header nav .home-logo {
+nav .home-logo {
   font-size: 26px;
   font-weight: bold;
 }
-.header nav a {
+nav .home-logo img {
+  width: 250px;
+}
+nav a {
   text-decoration: none;
   color: #d4d4d4;
   font-size: 18px;
 }
-.header .page-title-container {
-  margin-top: 100px;
-  margin-right: 100px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  color: #d4d4d4;
+
+header .hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
-.header .page-title-container h1 {
+header .page-title-container {
+  display: block;
+  margin: 0 auto;
+  color: #1E1E1E;
+}
+header .page-title-container h1 {
   font-size: 50px;
   font-weight: normal;
   margin-bottom: 10px;
 }
-.header .page-title-container > div {
+header .page-title-container > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,7 +85,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section {
+section, header, footer {
   width: 100%;
 }
 
@@ -84,6 +93,13 @@ section {
   width: 100%;
   padding: 20px 50px;
   margin: 0 auto;
+}
+
+.content {
+  max-width: 400px;
+}
+.content p {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

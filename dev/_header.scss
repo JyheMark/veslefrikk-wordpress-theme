@@ -1,70 +1,22 @@
-.header{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 520px;
-
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-        color: $colorSecondary;
-
-        .menu{   
-            padding: 5px 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            .menu-item{
-                display: inline-block;
-                width: 110px;
-                text-align: center;
-
-                a{
-                    border-bottom: 1px solid transparent;
-                    transition: border-bottom 300ms;
-
-                    &:hover{
-                        border-bottom: 1px solid $colorSecondary;
-                    }
-                }
-            }
-
-            .current-menu-item{
-                a{
-                    border-bottom: 1px solid $colorSecondary;
-                }
-            }
-        }
-
-        .home-logo{
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        a{
-            text-decoration: none;
-            color: $colorSecondary;
-            font-size: 18px;
-        }
+header{
+    .hero-image{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
     }
 
     .page-title-container{
-        margin-top: 100px;
-        margin-right: 100px;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-        color: $colorSecondary;
-
+        display: block;
+        margin: 0 auto;
+        color: #1E1E1E;
+    
         h1{
             font-size: 50px;
             font-weight: normal;
             margin-bottom: 10px;
         }
-
+    
         >div{
             display: flex;
             flex-direction: column;
