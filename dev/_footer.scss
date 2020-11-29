@@ -1,18 +1,19 @@
 footer{
     background-color: $colorBackground;
-    color: $colorSecondary;
+    color: $colorText;
 
     .container{
         >div{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
+            width: 100%;
 
             ul{
                 list-style-type: none;
                 
                 a{
-                    color: $colorSecondary;
+                    color: $colorText;
                 }
             }
 
@@ -23,7 +24,7 @@ footer{
                 }
                 svg{
                     width: 35px;
-                    color: $colorSecondary;
+                    color: $colorText;
                     transition: color 300ms;
 
                     &:hover{

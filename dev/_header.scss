@@ -4,20 +4,16 @@ header{
         background-size: cover;
         background-position: center;
         height: 500px;
+    }  
+    h1{
+        font-size: 70px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-family: $fontHeading;
     }
 
-    .page-title-container{
-        display: block;
-        margin: 0 auto;
-        color: $colorBackground;
-        text-align: center;
-    
-        h1{
-            font-size: 65px;
-            font-weight: normal;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            font-family: $fontHeading;
-        }
+    h3{
+        font-size: 22px;
     }
 }
