@@ -1,5 +1,4 @@
 <?php 
-    /* Template Name: Homepage */
     get_header(); 
 ?>
 
@@ -15,7 +14,7 @@
                         }
                     }
                     else {
-                        e_('No posts available.');
+                        echo('No posts available.');
                     }
                 ?>
             </div>
