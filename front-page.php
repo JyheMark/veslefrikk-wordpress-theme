@@ -5,19 +5,19 @@
 <section class="page page-home">
     <section>
         <div class="container">
-            <div class="content">
                 <?php
                     if (have_posts()) {
-                        while (have_posts()) {
-                            the_post();
-                            the_content();
-                        }
+                        echo '<div class="content">';
+                            while (have_posts()) {
+                                the_post();
+                                the_content();
+                            }
+                        echo '</div>';
                     }
                     else {
                         echo('No posts available.');
                     }
                 ?>
-            </div>
             <div class="image-container">
                 <img src="<?php echo wp_get_attachment_image_url( 53, 'full'); ?>"/>
             </div>

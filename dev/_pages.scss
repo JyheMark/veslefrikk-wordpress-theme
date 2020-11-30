@@ -66,3 +66,54 @@
         }
     }
 }
+
+.page-kontakt{
+    section{
+        .container{
+            >div{
+                width: calc(50% - 20px);
+                height: 100%;
+
+                .embedded-map{
+                    width: 100%;
+                    iframe{
+                        width: 100%;
+                    }
+                }
+
+                >span{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            
+                form{
+                    padding: 0 50px;
+                    height: 100%;
+
+                    span{
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        font-weight: bold;
+                    }
+
+                    input{
+                        width: 100%;
+                        display: block;
+                        height: 50px;
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+
+                    textarea{
+                        margin-bottom: 15px;
+                        resize: none;
+                        width: 100%;
+                        height: 215px;
+                        font-size: 16px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
