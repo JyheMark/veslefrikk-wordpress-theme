@@ -32,8 +32,17 @@ section, header, footer{
 
     .content{
         margin: 0 auto;
-        p{
+
+        ul, ol{
+            margin-left: 1em;
+        }
+
+        p, li{
             font-size: 16px;
+        }
+
+        p, ul, ol, h1, h2, h3, h4, h5{
+            margin-bottom: 20px;
         }
     }
 }

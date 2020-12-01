@@ -16,13 +16,6 @@
                         echo('No posts available.');
                     }
                 ?>
-                <?php 
-                    if (is_page('takk')){
-                        echo '<div class="row" style="text-align: center;padding:15px 0;">';
-                            echo '<a class="btn btn-primary" href="'.home_url().'">Tilbake til forsiden</a>';
-                        echo '</div>';
-                    }
-                ?>
         </div>
     </section>
 </section>

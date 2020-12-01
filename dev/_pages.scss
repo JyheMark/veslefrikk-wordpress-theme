@@ -119,3 +119,82 @@
         }
     }
 }
+
+.page-nyheter{
+    section{
+        .container{
+            .post-feed{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 900px;
+                .post{
+                    border-top: 1px solid $colorText;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    height: 300px;
+                    padding: 25px 0;
+
+                    >div{
+                        width: 60%;
+                        padding: 0 10px;
+                        overflow: hidden;
+
+                        a:first-of-type{
+                            font-size: 25px;
+                            font-family: $fontHeading;
+                            color: #000;
+                        }
+                        >span{
+                            font-size: 16px;
+                            font-style: italic;
+                            color: $colorText;
+                        }
+
+                        .read-more{
+                            color: $colorPrimary;
+                            text-decoration: underline;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                    .feature-image{
+                        width: 40%;
+                        height: 100%;
+                        padding: 0;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single{
+    section{
+        .container{
+            display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                span{
+                    margin-bottom: 25px;
+                }
+
+                .feature-image{
+                    margin-bottom: 25px;
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+
+            .content{
+                padding: 0 25px;
+            }
+        }
+    }
+}

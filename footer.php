@@ -10,7 +10,6 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#">Påmeldingsskjema</a></li>
                             <li><a href="#">Vil du jobbe hos oss?</a></li>
                             <li><a href="#">Medlemsorganisasjon</a></li>
                             <li><a href="#">Støttespillere</a></li>
