@@ -85,32 +85,34 @@
                     font-size: 18px;
                     margin-bottom: 10px;
                 }
-            
-                form{
-                    padding: 0 50px;
-                    height: 100%;
+            }
 
-                    span{
-                        font-size: 20px;
-                        margin-bottom: 15px;
-                        font-weight: bold;
-                    }
+            .contact-form{
+                .nf-form-fields-required{
+                    display: none;
+                }
 
-                    input{
-                        width: 100%;
-                        display: block;
-                        height: 50px;
-                        font-size: 16px;
-                        margin-bottom: 15px;
-                    }
+                .nf-element{
+                    color: #000;
+                }
 
-                    textarea{
-                        margin-bottom: 15px;
-                        resize: none;
-                        width: 100%;
-                        height: 215px;
-                        font-size: 16px;
-                        display: block;
+                .nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit]{
+                    display: inline-block;
+                    padding: 25px 10px;
+                    width: 200px;
+                    height: 30px;
+                    border: 1px solid #1E1E1E;
+                    font-size: 18px;
+                    line-height: 0px;
+                    transition: all 300ms;
+                    font-family: $fontHeading;
+                    text-transform: uppercase;
+                    text-align: center;
+                    background-color: $colorPrimary;
+                    color: $colorText;
+
+                    &:hover{
+                        background-color: lighten($colorPrimary, 10);
                     }
                 }
             }

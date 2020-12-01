@@ -228,29 +228,29 @@ header h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
-.page-kontakt section .container > div form {
-  padding: 0 50px;
-  height: 100%;
+.page-kontakt section .container .contact-form .nf-form-fields-required {
+  display: none;
 }
-.page-kontakt section .container > div form span {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: bold;
+.page-kontakt section .container .contact-form .nf-element {
+  color: #000;
 }
-.page-kontakt section .container > div form input {
-  width: 100%;
-  display: block;
-  height: 50px;
-  font-size: 16px;
-  margin-bottom: 15px;
+.page-kontakt section .container .contact-form .nf-form-content button, .page-kontakt section .container .contact-form .nf-form-content input[type=button], .page-kontakt section .container .contact-form .nf-form-content input[type=submit] {
+  display: inline-block;
+  padding: 25px 10px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #1E1E1E;
+  font-size: 18px;
+  line-height: 0px;
+  transition: all 300ms;
+  font-family: "Nerko One", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #009921;
+  color: #d4d4d4;
 }
-.page-kontakt section .container > div form textarea {
-  margin-bottom: 15px;
-  resize: none;
-  width: 100%;
-  height: 215px;
-  font-size: 16px;
-  display: block;
+.page-kontakt section .container .contact-form .nf-form-content button:hover, .page-kontakt section .container .contact-form .nf-form-content input[type=button]:hover, .page-kontakt section .container .contact-form .nf-form-content input[type=submit]:hover {
+  background-color: #00cc2c;
 }
 
 footer {

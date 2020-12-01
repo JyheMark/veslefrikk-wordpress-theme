@@ -18,18 +18,18 @@
                         aria-hidden="false" 
                         tabindex="0">
                     </iframe>
+                </div>
             </div>
-            </div>
-            <div>
-                <form action="./takk" method="post" name="contactForm" id="contactForm">
-                    <span class="row text-centered">Har du noen spørmal?</span>
-                    <input type="text" placeholder="Navn" required/>
-                    <input type="email" placeholder="Dinmail@eksempel.com" required/>
-                    <input type="phone" placeholder="Telefon"/>
-                    <textarea form="contactForm" placeholder="Skriv melding..." required></textarea>
-                    <input type="submit" value="Send"/>
-                </form>
-            </div>
+            <?php
+                if (have_posts()){
+                    while (have_posts()){
+                        echo '<div class="contact-form">';
+                            the_post();
+                            the_content();
+                        echo '</div>';
+                    }
+                }
+            ?>
         </div>
     </section>
 </section>
