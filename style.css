@@ -332,6 +332,19 @@ header h3 {
   background-color: #00cc2c;
 }
 
+.page-service section .container .service-image, .page-service section .container .content {
+  width: calc(50% - 20px);
+}
+.page-service section .container .service-image img {
+  width: 100%;
+}
+.page-service section .container .content {
+  padding: 0 20px;
+}
+.page-service section .container .btn {
+  margin: 0 auto;
+}
+
 .single section .container {
   display: flex;
   flex-direction: column;

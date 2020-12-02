@@ -32,33 +32,44 @@
                     $ageGroupArray = array(
                         array(
                             'label'     => 'Veslefrikk Mini: 2-3 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/2-3.jpg'
+                            'postId'    => 140,
+                            'url'       => './grupper/veslefrikk-mini-2-3-ar/'
                         ),array(
                             'label'     => 'Veslefrikk Mini: 3-5 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/3-5.jpg'
+                            'postId'    => 142,
+                            'url'       => './grupper/veslefrikk-mini-3-5-ar/'
                         ),array(
                             'label'     => 'Barneteater: 6-8 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/6-8.jpg'
+                            'postId'    => 144,
+                            'url'       => './grupper/barneteater-6-8-ar/'
                         ),array(
                             'label'     => 'Barneteater: 9-11 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/9-11.jpg'
+                            'postId'    => 146,
+                            'url'       => './grupper/barneteater-9-11-ar/'
                         ),array(
                             'label'     => 'Ungdomsteater: 11-13 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/11-13.jpg'
+                            'postId'    => 148,
+                            'url'       => './grupper/ungdomsteater-11-13-ar/'
                         ),array(
                             'label'     => 'Ungdomsteater: 13-18 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/13-18.jpg'
+                            'postId'    => 150,
+                            'url'       => './grupper/ungdomsteater-13-18-ar/'
                         ),array(
                             'label'     => 'Ungvoksenteater: 18-23 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/18-23.jpg'
+                            'postId'    => 152,
+                            'url'       => './grupper/ungvoksenteater-18-23-ar/'
                         ),array(
                             'label'     => 'Voksenteater: 25+ år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/25.jpg'
+                            'postId'    => 154,
+                            'url'       => './grupper/voksenteater-25-ar/'
                         )
                     );
 
                     foreach($ageGroupArray as $ageGroup){
-                        echo '<a class="service" href="#" style="background-image: url('.$ageGroup['imageUrl'].')">';
+                        $backgroundSrcId = get_post_meta( $ageGroup['postId'], 'service_image', true);
+                        $backgroundSrc = wp_get_attachment_image_url( $backgroundSrcId, 'full');
+
+                        echo '<a class="service" href="'.$ageGroup['url'].'" style="background-image: url('.($backgroundSrc?$backgroundSrc:'').')">';
                             echo '<span class="text-centered" href="#">'.$ageGroup['label'].'</span>';
                         echo '</a>';
                     }

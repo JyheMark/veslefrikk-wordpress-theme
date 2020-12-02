@@ -169,6 +169,31 @@
     }
 }
 
+.page-service{
+    section{
+        .container{
+
+            .service-image, .content{
+                width: calc(50% - 20px);
+            }
+
+            .service-image{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .content{
+                padding: 0 20px;
+            }
+
+            .btn{
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
 .single{
     section{
         .container{
