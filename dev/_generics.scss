@@ -23,7 +23,7 @@ section, header, footer{
 .container{
     width: 100%;
     max-width: 1100px;
-    padding: 40px 0;
+    padding: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -93,6 +93,40 @@ a{
 
         &:hover{
             background-color: lighten($colorSecondary, 10);
+        }
+    }
+}
+
+form{
+    .nf-form-fields-required{
+        display: none;
+    }
+
+    .nf-element{
+        color: #000;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit]{
+        display: inline-block;
+        padding: 25px 10px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid #1E1E1E;
+        font-size: 18px;
+        line-height: 0px;
+        transition: all 300ms;
+        font-family: $fontHeading;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $colorPrimary;
+        color: $colorText;
+
+        &:hover{
+            background-color: lighten($colorPrimary, 10);
         }
     }
 }

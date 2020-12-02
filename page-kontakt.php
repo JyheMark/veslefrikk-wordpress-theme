@@ -23,8 +23,8 @@
             <?php
                 if (have_posts()){
                     while (have_posts()){
-                        echo '<div class="contact-form">';
-                            the_post();
+                        the_post();
+                        echo '<div class="content">';
                             the_content();
                         echo '</div>';
                     }

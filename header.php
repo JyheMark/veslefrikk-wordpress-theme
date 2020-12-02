@@ -16,7 +16,7 @@
             </div>
         </nav>
         <header>
-            <div class="hero-image" style="background-image: url(<?php echo get_field('hero_image')?get_field('hero_image'):wp_get_attachment_image_url(47, 'full'); ?>)"></div>
+            <div class="hero-image" style="background-image: url(<?php echo get_field('hero_image')?get_field('hero_image'):get_template_directory_uri().'/images/default-hero.jpg'; ?>)"></div>
             <div class="container">
                 <h1 class="row text-centered"><?php echo get_field('heading')?get_field('heading'):get_the_title(); ?></h1>
                 <h3 class="row text-centered"><?php echo get_field('sub_heading')?get_field('sub_heading'):''?></h3>

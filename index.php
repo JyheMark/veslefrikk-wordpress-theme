@@ -5,12 +5,12 @@
         <div class="container">
                 <?php
                     if (have_posts()) {
-                        echo '<div class="content">';
-                            while (have_posts()) {
-                                the_post();
-                                the_content();
+                        while (have_posts()) {
+                            the_post();
+                                echo '<div class="content">';
+                                    the_content();
+                                echo '</div>';
                             }
-                        echo '</div>';
                     }
                     else {
                         echo('No posts available.');

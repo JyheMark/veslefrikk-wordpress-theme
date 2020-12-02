@@ -86,36 +86,6 @@
                     margin-bottom: 10px;
                 }
             }
-
-            .contact-form{
-                .nf-form-fields-required{
-                    display: none;
-                }
-
-                .nf-element{
-                    color: #000;
-                }
-
-                .nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit]{
-                    display: inline-block;
-                    padding: 25px 10px;
-                    width: 200px;
-                    height: 30px;
-                    border: 1px solid #1E1E1E;
-                    font-size: 18px;
-                    line-height: 0px;
-                    transition: all 300ms;
-                    font-family: $fontHeading;
-                    text-transform: uppercase;
-                    text-align: center;
-                    background-color: $colorPrimary;
-                    color: $colorText;
-
-                    &:hover{
-                        background-color: lighten($colorPrimary, 10);
-                    }
-                }
-            }
         }
     }
 }
@@ -127,8 +97,8 @@
                 margin: 0 auto;
                 width: 100%;
                 max-width: 900px;
+
                 .post{
-                    border-top: 1px solid $colorText;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -136,6 +106,11 @@
                     width: 100%;
                     height: 300px;
                     padding: 25px 0;
+                    border-top: 1px solid $colorText;
+
+                    &:first-of-type{
+                        border: 1px solid transparent;
+                    }
 
                     >div{
                         width: 60%;
@@ -147,6 +122,7 @@
                             font-family: $fontHeading;
                             color: #000;
                         }
+
                         >span{
                             font-size: 16px;
                             font-style: italic;
@@ -186,6 +162,7 @@
 
                 .feature-image{
                     margin-bottom: 25px;
+                    width: 100%;
                     
                     img{
                         width: 100%;
