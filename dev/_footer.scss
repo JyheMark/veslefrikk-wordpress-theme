@@ -19,6 +19,8 @@ footer{
             }
 
             div{
+                font-size: 14px;
+
                 span, li{
                     display: block;
                     margin-bottom: 10px;
@@ -32,12 +34,13 @@ footer{
                         color: #fff;
                     }
                 }
+
+                a{
+                    &:last-of-type{
+                        color: $colorText;
+                    }
+                }
             }
-        }
-    
-        span, li{
-            display: block;
-            font-size: 14px;
         }
     }
 }

@@ -312,6 +312,29 @@ header h3 {
   background-size: cover;
   background-position: center;
 }
+.page-nyheter section .container .post-feed .pagination-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.page-nyheter section .container .post-feed .pagination-controls a {
+  display: inline-block;
+  padding: 25px 10px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #1E1E1E;
+  font-size: 18px;
+  line-height: 0px;
+  transition: all 300ms;
+  font-family: "Nerko One", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #009921;
+  color: #d4d4d4;
+}
+.page-nyheter section .container .post-feed .pagination-controls a:hover {
+  background-color: #00cc2c;
+}
 
 .single section .container {
   display: flex;
@@ -349,6 +372,9 @@ footer .container > div ul {
 footer .container > div ul a {
   color: #d4d4d4;
 }
+footer .container > div div {
+  font-size: 14px;
+}
 footer .container > div div span, footer .container > div div li {
   display: block;
   margin-bottom: 10px;
@@ -361,9 +387,8 @@ footer .container > div div svg {
 footer .container > div div svg:hover {
   color: #fff;
 }
-footer .container span, footer .container li {
-  display: block;
-  font-size: 14px;
+footer .container > div div a:last-of-type {
+  color: #d4d4d4;
 }
 
 /*# sourceMappingURL=style.css.map */

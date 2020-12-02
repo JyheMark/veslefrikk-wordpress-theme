@@ -9,7 +9,8 @@
                         'orderby'           => 'date',
                         'order'             => 'DESC',
                         'post_type'         => 'post',
-                        'posts_per_page'    => 10
+                        'paged'             => 1,
+                        'posts_per_page'    => 5
                     );
                     
                     $query = new WP_Query($args);
@@ -34,6 +35,12 @@
                                     }                   
                                 echo '</div>';
                             }
+                            echo '<div class="pagination-controls">';
+                                previous_posts_link('Tilbake');
+                                next_posts_link(__('Neste'), $query->max_num_pages );
+                            echo '</div>';
+
+                            wp_reset_postdata();
                         echo '</div>';
                     }
 
