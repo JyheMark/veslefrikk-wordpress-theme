@@ -6,12 +6,11 @@
                         <span>Tel: (+47) 452 93 408</span>
                         <span>E-post: veslefrikkteaterskole@gmail.com</span>
                         <span>Generalveien 9, 1767 Halden</span>
-                        <span>&copy; <?php echo date('Y'); ?> Veslefrikk Teaterverksted.</span>
+                        <span>&copy; 2003 - <?php echo date('Y'); ?> Veslefrikk Teaterverksted</span>
                     </div>
                     <div>
                         <ul>
-                            <li><a href="#">Vil du jobbe hos oss?</a></li>
-                            <li><a href="#">Medlemsorganisasjon</a></li>
+                            <li><a href="./vil-du-jobbe-hos-oss/">Vil du jobbe hos oss?</a></li>
                             <li><a href="#">Støttespillere</a></li>
                         </ul>
                     </div>
@@ -28,6 +27,11 @@
                             </a>
                         <span>Icons from <a href="https://fontawesome.com/" target="_blank">FontAwesome</a></span>
                         <a href="https://www.linkedin.com/in/jyhe-mark/" target="_blank">Website by Jyhe Mark</a>
+                    </div>
+                    <div>
+                        <a class="natf-link" href="https://natf.no/" target="_blank">
+                            <span style="background-image: url('<?php echo get_template_directory_uri().'/images/NATF-logo.png' ?>')"></span>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -209,10 +209,6 @@ header h3 {
   width: calc(50% - 20px);
   max-width: 460px;
 }
-.page-home section .container .content p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
 .page-home section .container > .btn {
   margin: 0 auto;
 }
@@ -386,6 +382,11 @@ footer .container > div div svg {
 }
 footer .container > div div svg:hover {
   color: #fff;
+}
+footer .container > div div .natf-link span {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
 }
 footer .container > div div a:last-of-type {
   color: #d4d4d4;

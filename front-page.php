@@ -27,19 +27,18 @@
         <div class="container">
             <h3 class="row text-centered">Har du en skuespiller i deg?</h3>
             <div class="service-list">
-                <span class="row text-centered">Vi har tilbud til barn og ungdom i alle aldre:</span>
+                <span class="row text-centered">Vi har tilbud til barn og ungdom i alle aldre</span>
                 <?php
-
                     $ageGroupArray = array(
                         array(
                             'label'     => 'Veslefrikk Mini: 2-3 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/11-13.jpg'
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/2-3.jpg'
                         ),array(
                             'label'     => 'Veslefrikk Mini: 3-5 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/9-11.jpg'
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/3-5.jpg'
                         ),array(
                             'label'     => 'Barneteater: 6-8 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/11-13.jpg'
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/6-8.jpg'
                         ),array(
                             'label'     => 'Barneteater: 9-11 år',
                             'imageUrl'  => get_template_directory_uri().'/images/groupImages/9-11.jpg'
@@ -47,14 +46,14 @@
                             'label'     => 'Ungdomsteater: 11-13 år',
                             'imageUrl'  => get_template_directory_uri().'/images/groupImages/11-13.jpg'
                         ),array(
-                            'label'     => 'Ungdomsteater: 13-20 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/9-11.jpg'
+                            'label'     => 'Ungdomsteater: 13-18 år',
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/13-18.jpg'
                         ),array(
                             'label'     => 'Ungvoksenteater: 18-23 år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/11-13.jpg'
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/18-23.jpg'
                         ),array(
                             'label'     => 'Voksenteater: 25+ år',
-                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/9-11.jpg'
+                            'imageUrl'  => get_template_directory_uri().'/images/groupImages/25.jpg'
                         )
                     );
 

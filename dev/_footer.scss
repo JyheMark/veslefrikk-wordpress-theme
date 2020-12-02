@@ -35,6 +35,14 @@ footer{
                     }
                 }
 
+                .natf-link{
+                    span{
+                        width: 150px;
+                        height: 150px;
+                        background-size: cover;
+                    }
+                }
+
                 a{
                     &:last-of-type{
                         color: $colorText;
