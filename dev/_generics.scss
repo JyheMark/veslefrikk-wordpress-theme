@@ -36,6 +36,8 @@ section, header, footer{
     justify-content: space-between;
 
     .content{
+        width: 100%;
+
         ul, ol{
             margin-left: 1em;
         }
@@ -101,6 +103,9 @@ a{
 }
 
 form{
+    max-width: 500px;
+    margin: 0 auto;
+
     .nf-form-fields-required{
         display: none;
     }

@@ -43,6 +43,9 @@ section, header, footer {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.container .content {
+  width: 100%;
+}
 .container .content ul, .container .content ol {
   margin-left: 1em;
 }
@@ -98,6 +101,10 @@ a {
   background-color: #ecc789;
 }
 
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
 form .nf-form-fields-required {
   display: none;
 }
@@ -192,6 +199,7 @@ nav .home-logo img {
 
 header {
   padding-top: 0;
+  transition: margin-top 300ms;
 }
 header .hero-image {
   margin-bottom: 20px;
