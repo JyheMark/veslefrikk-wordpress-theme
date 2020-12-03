@@ -16,8 +16,7 @@
                 ?>
                 <?php
                     if (get_field('service_image')){
-                        echo '<div class="service-image">';
-                            echo '<img src="'. get_field('service_image') .'"/>';
+                        echo '<div class="service-image" style="background-image: url('. get_field('service_image') .')">';
                         echo '</div>';
                     }
                 ?>

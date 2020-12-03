@@ -1,21 +1,20 @@
 header{
-    padding: 0 0 40px 0;
+    padding-top: 0;
+
     .hero-image{
         margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 500px;
-    }  
-    h1{
-        font-size: 70px;
-        font-weight: normal;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        font-family: $fontHeading;
-    }
+        position: relative;
 
-    h3{
-        font-size: 22px;
-    }
+        .container{
+            position: absolute;
+            top: 40%;
+            max-width: none;
+        }
+    }  
 }

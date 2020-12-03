@@ -12,9 +12,6 @@
                                 echo '</div>';
                             }
                     }
-                    else {
-                        echo('No posts available.');
-                    }
                 ?>
         </div>
     </section>

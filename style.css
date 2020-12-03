@@ -14,15 +14,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section, header, footer {
-  width: 100%;
+h1 {
+  color: #d4d4d4;
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Nerko One", cursive;
 }
 
-.page > section {
-  padding: 20px 0;
+h2 {
+  font-size: 18px;
+  font-weight: bold;
 }
-.page > section > .container:last-of-type {
-  padding-bottom: 0;
+
+section, header, footer {
+  width: 100%;
+  padding: 20px 0;
 }
 
 .container {
@@ -34,9 +42,6 @@ section, header, footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.container .content {
-  margin: 0 auto;
 }
 .container .content ul, .container .content ol {
   margin-left: 1em;
@@ -119,6 +124,7 @@ form .nf-form-content button, form .nf-form-content input[type=button], form .nf
 }
 form .nf-form-content button:hover, form .nf-form-content input[type=button]:hover, form .nf-form-content input[type=submit]:hover {
   background-color: #00cc2c;
+  color: #d4d4d4;
 }
 
 nav {
@@ -155,6 +161,12 @@ nav .menu .menu-item {
   display: inline-block;
   text-align: center;
 }
+nav .menu .menu-item:first-of-type {
+  padding-left: 0;
+}
+nav .menu .menu-item:last-of-type {
+  padding-right: 0;
+}
 nav .menu .menu-item a {
   text-decoration: none;
   color: #d4d4d4;
@@ -179,31 +191,28 @@ nav .home-logo img {
 }
 
 header {
-  padding: 0 0 40px 0;
+  padding-top: 0;
 }
 header .hero-image {
   margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
+  position: relative;
 }
-header h1 {
-  font-size: 70px;
-  font-weight: normal;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: "Nerko One", cursive;
-}
-header h3 {
-  font-size: 22px;
+header .hero-image .container {
+  position: absolute;
+  top: 40%;
+  max-width: none;
 }
 
 .page-home section .container > .image-container {
   width: calc(50% - 20px);
-}
-.page-home section .container > .image-container img {
-  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 .page-home section .container .content {
   width: calc(50% - 20px);
@@ -218,7 +227,7 @@ header h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .page-home section .container .service-list > span {
   margin-bottom: 25px;
@@ -335,11 +344,14 @@ header h3 {
 .page-service section .container .service-image, .page-service section .container .content {
   width: calc(50% - 20px);
 }
-.page-service section .container .service-image img {
-  width: 100%;
+.page-service section .container .service-image {
+  background-size: cover;
+  background-position: center;
+  height: 355px;
 }
 .page-service section .container .content {
   padding: 0 20px;
+  max-width: 460px;
 }
 .page-service section .container .btn {
   margin: 0 auto;

@@ -18,14 +18,12 @@
                         echo('No posts available.');
                     }
                 ?>
-            <div class="image-container">
-                <img src="<?php echo wp_get_attachment_image_url( 53, 'full'); ?>"/>
-            </div>
+            <div class="image-container" style="background-image: url('<?php echo wp_get_attachment_image_url( 53, 'full'); ?>)'"></div>
         </div>
     </section>
     <section>
         <div class="container">
-            <h3 class="row text-centered">Har du en skuespiller i deg?</h3>
+            <h2 class="row text-centered">Har du en skuespiller i deg?</h3>
             <div class="service-list">
                 <span class="row text-centered">Vi har tilbud til barn og ungdom i alle aldre</span>
                 <?php
