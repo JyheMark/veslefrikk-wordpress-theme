@@ -18,7 +18,9 @@
         <header>
             <div class="hero-image" style="background-image: url(<?php echo get_field('hero_image')?get_field('hero_image'):get_template_directory_uri().'/images/default-hero.jpg'; ?>)">
                 <div class="container">
-                    <h1 class="row text-centered"><?php echo get_field('heading')?get_field('heading'):get_the_title(); ?></h1>
+                    <h1 class="row text-centered"><?php 
+                        echo !is_singular('post')?(get_field('heading')?get_field('heading'):get_the_title()):'Nyheter'; 
+                    ?></h1>
                 </div> 
             </div>             
         </header>
