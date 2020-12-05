@@ -4,12 +4,14 @@
     <section>
         <div class="container">
                 <?php
+                    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
                     $args = array(
                         'numberposts'       => -1,
                         'orderby'           => 'date',
                         'order'             => 'DESC',
                         'post_type'         => 'post',
-                        'paged'             => 1,
+                        'paged'             => $paged,
                         'posts_per_page'    => 5
                     );
                     
