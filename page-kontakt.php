@@ -3,6 +3,17 @@
 <section class="page page-kontakt">
     <section>
         <div class="container">
+            <?php
+                if (have_posts()){
+                    while (have_posts()){
+                        the_post();
+                        echo '<div class="content">';
+                        echo '<h2>Har du noen spørsmål?</h2>';
+                            the_content();
+                        echo '</div>';
+                    }
+                }
+            ?>
             <div>
                 <span class="row">Daglig leder: Monia Berger</span>
                 <span class="row">Tel: (+47) 452 93 408</span>
@@ -20,16 +31,6 @@
                     </iframe>
                 </div>
             </div>
-            <?php
-                if (have_posts()){
-                    while (have_posts()){
-                        the_post();
-                        echo '<div class="content">';
-                            the_content();
-                        echo '</div>';
-                    }
-                }
-            ?>
         </div>
     </section>
 </section>
