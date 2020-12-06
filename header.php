@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Teaterskole for barn og ungdom i Halden"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
         <title>Veslefrikk <?php wp_title(); ?></title>

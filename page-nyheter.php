@@ -23,9 +23,11 @@
                                 echo '<div class="post">';
                                     $query->the_post();
                                     echo '<div>';
-                                        echo '<span class="row date">'.get_the_date().'</span>';
-                                        echo '<a href="'.get_the_permalink().'" class="row">'.get_the_title().'</a>'; 
-                                        echo '<p>'. get_the_excerpt() .'</p>';
+                                        echo '<div>';
+                                            echo '<span class="row date">'.get_the_date().'</span>';
+                                            echo '<a href="'.get_the_permalink().'" class="row">'.get_the_title().'</a>'; 
+                                            echo '<p>'. get_the_excerpt() .'</p>';
+                                        echo '</div>';
                                         echo '<a href="'.get_the_permalink().'" class="row read-more">Les videre</a>'; 
                                     echo '</div>';   
                                     if ($imgSrc = get_metadata( 'post', get_the_ID(), 'feature_image', true)){

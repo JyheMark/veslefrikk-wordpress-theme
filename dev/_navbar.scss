@@ -16,8 +16,7 @@ nav{
     .mobile-menu-button{
         display: none;
         padding: 10px;
-        width: 60px;
-        height: 60px;
+        width: 45px;
         z-index: 999;
 
         svg{
@@ -104,21 +103,17 @@ nav{
 
     .mobile-menu{
         overflow: hidden;
-        width: 0;
+        max-width: 0;
         position: fixed;
-        top: 0;
+        top: 75px;
         bottom: 0;
         right: 0;
-        transition: width 300ms;
-        padding-top: 100px;
+        transition: all 500ms;
+        padding-top: 20px;
         background-color: $colorBackground;
 
         &.expanded{
-            width: 40%;
-
-            @media only screen and (max-width: 510px){
-                width: 50%;
-            }
+            max-width: 100%;
         }
 
         ul{
@@ -127,7 +122,6 @@ nav{
             justify-content: flex-start;
 
             li{
-                text-align: right;
                 margin-bottom: 10px;
             }
         }

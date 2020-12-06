@@ -21,6 +21,12 @@ h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: "Nerko One", cursive;
+  word-break: break-word;
+}
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -58,10 +64,10 @@ section, header, footer {
 @media only screen and (max-width: 950px) {
   .container {
     flex-direction: column;
-    padding: 0;
+    padding: 0 10px;
   }
   .container .content {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -167,8 +173,7 @@ nav {
 nav .mobile-menu-button {
   display: none;
   padding: 10px;
-  width: 60px;
-  height: 60px;
+  width: 45px;
   z-index: 999;
 }
 nav .mobile-menu-button svg {
@@ -237,22 +242,17 @@ nav .home-logo img {
 }
 nav .mobile-menu {
   overflow: hidden;
-  width: 0;
+  max-width: 0;
   position: fixed;
-  top: 0;
+  top: 75px;
   bottom: 0;
   right: 0;
-  transition: width 300ms;
-  padding-top: 100px;
+  transition: all 500ms;
+  padding-top: 20px;
   background-color: #1E1E1E;
 }
 nav .mobile-menu.expanded {
-  width: 40%;
-}
-@media only screen and (max-width: 510px) {
-  nav .mobile-menu.expanded {
-    width: 50%;
-  }
+  max-width: 100%;
 }
 nav .mobile-menu ul {
   display: flex;
@@ -260,7 +260,6 @@ nav .mobile-menu ul {
   justify-content: flex-start;
 }
 nav .mobile-menu ul li {
-  text-align: right;
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 950px) {
@@ -292,6 +291,15 @@ header .hero-image .container {
   top: 40%;
   max-width: none;
 }
+@media only screen and (max-width: 950px) {
+  header {
+    padding-bottom: 0;
+  }
+  header .hero-image {
+    height: 350px;
+    margin-bottom: 0;
+  }
+}
 
 .page-home section .container > .image-container {
   width: calc(50% - 20px);
@@ -300,7 +308,7 @@ header .hero-image .container {
 }
 @media only screen and (max-width: 950px) {
   .page-home section .container > .image-container {
-    height: 500px;
+    height: 300px;
     width: 100%;
   }
 }
@@ -312,9 +320,6 @@ header .hero-image .container {
   .page-home section .container .content {
     width: 100%;
     max-width: none;
-  }
-  .page-home section .container .content h2 {
-    text-align: center;
   }
 }
 .page-home section .container > .btn {
@@ -342,7 +347,7 @@ header .hero-image .container {
 }
 @media only screen and (max-width: 1045px) {
   .page-home section .container .service-list .service {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
     height: 500px;
   }
 }
@@ -350,7 +355,7 @@ header .hero-image .container {
   .page-home section .container .service-list .service {
     width: 100%;
     height: 350px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .page-home section .container .service-list .service:hover {
     box-shadow: none;
@@ -388,6 +393,11 @@ header .hero-image .container {
   font-size: 18px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 950px) {
+  .page-kontakt section .container > div {
+    width: 100%;
+  }
+}
 
 .page-nyheter section .container .post-feed {
   margin: 0 auto;
@@ -400,7 +410,7 @@ header .hero-image .container {
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
-  height: 300px;
+  height: 325px;
   padding: 25px 0;
   border-top: 1px solid #d4d4d4;
 }
@@ -409,10 +419,12 @@ header .hero-image .container {
 }
 .page-nyheter section .container .post-feed .post > div {
   width: 60%;
-  padding: 0 10px;
+  padding-right: 20px;
+}
+.page-nyheter section .container .post-feed .post > div > div {
   overflow: hidden;
 }
-.page-nyheter section .container .post-feed .post > div a:first-of-type {
+.page-nyheter section .container .post-feed .post > div > div a:first-of-type {
   font-size: 25px;
   font-family: "Nerko One", cursive;
   color: #000;
@@ -424,10 +436,24 @@ header .hero-image .container {
 }
 .page-nyheter section .container .post-feed .post .feature-image {
   width: 40%;
-  height: 100%;
+  height: auto;
   padding: 0;
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 950px) {
+  .page-nyheter section .container .post-feed .post {
+    padding: 25px 10px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .page-nyheter section .container .post-feed .post > div {
+    width: 100%;
+  }
+  .page-nyheter section .container .post-feed .post .feature-image {
+    display: none;
+  }
 }
 .page-nyheter section .container .post-feed .pagination-controls {
   width: 100%;
@@ -437,7 +463,7 @@ header .hero-image .container {
 .page-nyheter section .container .post-feed .pagination-controls a {
   display: inline-block;
   padding: 25px 10px;
-  width: 200px;
+  width: 100px;
   height: 30px;
   border: 1px solid #1E1E1E;
   font-size: 18px;
@@ -453,8 +479,11 @@ header .hero-image .container {
   background-color: #00cc2c;
 }
 
+.page-service section .container {
+  flex-wrap: nowrap;
+}
 .page-service section .container .service-image, .page-service section .container .content {
-  width: calc(50% - 20px);
+  width: calc(100% - 20px);
 }
 .page-service section .container .service-image {
   background-size: cover;
@@ -467,6 +496,17 @@ header .hero-image .container {
 }
 .page-service section .container .btn {
   margin: 0 auto;
+}
+@media only screen and (max-width: 950px) {
+  .page-service section .container {
+    flex-direction: column-reverse;
+  }
+  .page-service section .container .service-image, .page-service section .container .content {
+    width: 100%;
+  }
+  .page-service section .container .content {
+    margin-top: 20px;
+  }
 }
 
 .single section .container {
@@ -489,7 +529,6 @@ header .hero-image .container {
   max-width: calc(100% - 20px);
   margin-bottom: 25px;
   text-align: center;
-  height: 500px;
   padding: 0 10px;
 }
 .single section .container .feature-image img {
@@ -501,6 +540,16 @@ header .hero-image .container {
 }
 .single section .container .content .wp-block-image {
   margin: 0 auto;
+}
+.single section .container .content .wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 950px) {
+  .single section .container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
 }
 
 footer {
@@ -523,7 +572,7 @@ footer .container > div ul a {
 }
 footer .container > div div {
   font-size: 14px;
-  width: 100%;
+  width: auto;
 }
 footer .container > div div span, footer .container > div div li {
   display: block;
@@ -552,6 +601,7 @@ footer .container > div div a:last-of-type {
   footer .container > div div:first-of-type {
     display: block;
     text-align: center;
+    width: 100%;
   }
 }
 
