@@ -5,11 +5,25 @@
                 width: calc(50% - 20px);
                 background-position: center;
                 background-size: cover;
+
+                @media only screen and (max-width: $break2){
+                    height: 500px;
+                    width: 100%;
+                }
             }
         
             .content{
                 width: calc(50% - 20px);
                 max-width: 460px;
+
+                @media only screen and (max-width: $break2){
+                    width: 100%;
+                    max-width: none;
+
+                    h2{
+                        text-align: center;
+                    }
+                }
             }
 
             >.btn{
@@ -31,10 +45,27 @@
                 .service{
                     background-size: cover;
                     background-repeat: no-repeat;
-                    width: 250px;
+                    background-position: center;
+                    width: calc(25% - 20px);
                     height: 250px;
                     margin-bottom: 20px;
                     transition: all 300ms;
+
+                    @media only screen and (max-width: $break1){
+                        width: calc(50% - 20px);
+                        height: 500px;
+                    }
+
+                    @media only screen and (max-width: $break2){
+                        width: 100%;
+                        height: 350px;
+                        margin-bottom: 0;
+
+                        &:hover{
+                            box-shadow: none;
+                            transform: none;
+                        }
+                    }
 
                     &:hover{
                         cursor: pointer;

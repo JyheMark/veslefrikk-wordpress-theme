@@ -8,6 +8,7 @@ footer{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: nowrap;
             width: 100%;
 
             ul{
@@ -20,6 +21,7 @@ footer{
 
             div{
                 font-size: 14px;
+                width: 100%;
 
                 span, li{
                     display: block;
@@ -46,6 +48,15 @@ footer{
                 a{
                     &:last-of-type{
                         color: $colorText;
+                    }
+                }
+
+                @media only screen and (max-width: $break2){
+                    display: none;
+
+                    &:first-of-type{
+                        display: block;
+                        text-align: center;
                     }
                 }
             }
