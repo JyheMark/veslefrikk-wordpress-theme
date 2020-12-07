@@ -24,7 +24,7 @@
     </section>
     <section>
             <div class="container">
-                <a href="<?php echo get_the_permalink(54) ?>" class="btn btn-primary">Meld deg opp</a>
+                <a href="<?php echo get_the_permalink(54) ?>" class="btn btn-primary">Meld deg på</a>
             </div>
     </section>
 </section>

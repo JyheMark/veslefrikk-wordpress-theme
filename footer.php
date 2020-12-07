@@ -3,8 +3,8 @@
                 <div>
                     <div>
                         <span>Daglig leder: Monia Berger</span>
-                        <span>Tel: (+47) 452 93 408</span>
-                        <span>E-post: veslefrikkteaterskole@gmail.com</span>
+                        <a href="tel: 4745293408">Tel: (+47) 452 93 408</a>
+                        <a href="mailto: veslefrikkteaterskole@gmail.com">E-post: veslefrikkteaterskole@gmail.com</a>
                         <span>Generalveien 9, 1767 Halden</span>
                         <span>&copy; 2003 - <?php echo date('Y'); ?> Veslefrikk Teaterverksted</span>
                     </div>
@@ -16,6 +16,7 @@
                     </div>
                     <div>
                         <span>Sosiale Medier</span>
+                        <span class="social-links">
                             <a href="https://www.facebook.com/veslefrikkteaterverksted" target="_blank">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
                             </a>
@@ -25,6 +26,7 @@
                             <a href="https://www.youtube.com/channel/UCpyQmqyjO1zsHXt0MRckOcQ" target="_blank">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube-square" class="svg-inline--fa fa-youtube-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"></path></svg>
                             </a>
+                        </span>
                         <span>Icons from <a href="https://fontawesome.com/" target="_blank">FontAwesome</a></span>
                         <a href="https://www.linkedin.com/in/jyhe-mark/" target="_blank">Website by Jyhe Mark</a>
                     </div>

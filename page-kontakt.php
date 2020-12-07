@@ -16,8 +16,8 @@
             ?>
             <div>
                 <span class="row">Daglig leder: Monia Berger</span>
-                <span class="row">Tel: (+47) 452 93 408</span>
-                <span class="row">E-post: veslefrikkteaterskole@gmail.com</span>
+                <span class="row">Tel: <a href="tel:4754293408">(+47) 452 93 408</a></span>
+                <span class="row">E-post: <a href="mailto:veslefrikkteaterskole@gmail.com">veslefrikkteaterskole@gmail.com</a></span>
                 <span class="row">Generalveien 9, 1767 Halden</span>
                 <div class="embedded-map">
                     <iframe 

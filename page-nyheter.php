@@ -12,6 +12,7 @@
                         'order'             => 'DESC',
                         'post_type'         => 'post',
                         'paged'             => $paged,
+                        'category_name'     => 'post',
                         'posts_per_page'    => 5
                     );
                     

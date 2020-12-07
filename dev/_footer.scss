@@ -23,9 +23,10 @@ footer{
                 font-size: 14px;
                 width: auto;
 
-                span, li{
+                span, li, a{
                     display: block;
                     margin-bottom: 10px;
+                    color: $colorText;
                 }
                 svg{
                     width: 35px;
@@ -33,7 +34,14 @@ footer{
                     transition: color 300ms;
 
                     &:hover{
-                        color: #fff;
+                        color: $colorPrimary;
+                    }
+                }
+
+                .social-links{
+                    a{
+                        display: inline-block;
+                        margin: 0;
                     }
                 }
 
@@ -42,12 +50,6 @@ footer{
                         width: 150px;
                         height: 150px;
                         background-size: cover;
-                    }
-                }
-
-                a{
-                    &:last-of-type{
-                        color: $colorText;
                     }
                 }
 
