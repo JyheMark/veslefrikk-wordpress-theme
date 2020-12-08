@@ -18,7 +18,11 @@
                         echo('No posts available.');
                     }
                 ?>
-            <div class="image-container" style="background-image: url('<?php echo wp_get_attachment_image_url( 53, 'full'); ?>)'"></div>
+                <?php
+                    if (get_field('feature_image')){
+                        echo '<div class="image-container" style="background-image: url('. get_field('feature_image') .'"></div>';
+                    }
+                ?>
         </div>
     </section>
     <section>
