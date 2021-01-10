@@ -39,6 +39,10 @@ section, header, footer {
   padding: 20px 0;
 }
 
+figure {
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 1100px;
@@ -564,28 +568,21 @@ header .hero-image .container {
 .single section .container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+.single section .container h2 {
+  text-align: center;
+}
+.single section .container span {
+  margin: 20px auto;
 }
 .single section .container > div {
   width: calc(100% - 20px);
 }
-.single section .container > div h2 {
+.single section .container > div figure figcaption {
   text-align: center;
-}
-.single section .container > div span {
-  margin-bottom: 25px;
-}
-.single section .container .feature-image {
-  max-width: calc(100% - 20px);
-  margin-bottom: 25px;
-  text-align: center;
-  padding: 0 10px;
-}
-.single section .container .feature-image img {
-  max-width: 100%;
-  max-height: 100%;
 }
 .single section .container .content {
   padding: 0 25px;

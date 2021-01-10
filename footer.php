@@ -11,7 +11,7 @@
                     <div>
                         <ul>
                             <li><a href="./vil-du-jobbe-hos-oss/">Vil du jobbe hos oss?</a></li>
-                            <li><a href="#">Støttespillere</a></li>
+                            <li><a href="./stottespillere/">Støttespillere</a></li>
                         </ul>
                     </div>
                     <div>
